@@ -88,6 +88,14 @@ article.blog-preview-card {
     box-shadow: 10px 10px 0px var(--clr-black);
 }
 
+article.blog-preview-card:hover {
+    box-shadow: 15px 15px 0px var(--clr-black);
+    animation-name: shadow;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
 .placeholder {
     position: relative;
     height: 201px;
@@ -161,4 +169,10 @@ p.publish-date {
 .attribution a:hover,
 .attribution a:active {
     color: hsl(258, 46%, 50%);
+}
+
+@keyframes shadow {
+      0% {box-shadow: 10px 10px 0px var(--clr-black);}
+     25% {box-shadow:  5px  5px 0px var(--clr-black);}
+    100% {box-shadow: 15px 15px 0px var(--clr-black);}
 }
